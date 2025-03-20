@@ -4,7 +4,10 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello_world():
-    return "<p>Hello world!</p>"
+    return "<p>Hello NHA!</p>"
+
+if __name__ == '__main__':
+    app.run(port=5000,debug=True)
 
 #git checkout -b main
 #response: Switched to a new branch 'main'
